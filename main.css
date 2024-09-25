@@ -1,0 +1,47 @@
+:root {
+    --green: #00FF00;  /* Cor verde */
+    --white: #ffffff;  /* Cor branca */
+    --black: #000000;  /* Cor preta */
+    --bg: var(--white); /* Cor de fundo padrão */
+    --fontcolor: var(--black); /* Cor do texto padrão */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+    color: var(--fontcolor);
+    background: var(--bg);
+}
+
+* {
+    color: var(--fontcolor);
+    background: var(--bg);
+}
+
+ul {
+    font-family: Helvetica, sans-serif;
+}
+
+li {
+    list-style: circle;
+}
+
+.list {
+    list-style: square;
+}
+
+.light-theme {
+    --bg: #00FF00; /* Fundo verde */
+    --fontcolor: #000000; /* Texto preto */
+}
+
+.dark-theme {
+    --bg: var(--black); /* Fundo preto */
+    --fontcolor: var(--green); /* Texto verde */
+}
