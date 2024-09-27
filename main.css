@@ -39,9 +39,28 @@ li {
 .light-theme {
     --bg: #00FF00; /* Fundo verde */
     --fontcolor: #000000; /* Texto preto */
+    --bg: var(--green);
+    --fontcolor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
 }
 
 .dark-theme {
     --bg: var(--black); /* Fundo preto */
     --fontcolor: var(--green); /* Texto verde */
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
 }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus { outline-style: none;}
